@@ -91,7 +91,7 @@ class Scraber extends React.Component {
         .then((res) => res.json())
         .then((res) => {
           var data;
-          if (this.state.selectedValue === 5|| this.state.selectedValue === 6) {
+          if (this.state.selectedValue === '5'|| this.state.selectedValue === '6') {
             data = res[0].dataserie
           }else{
             
