@@ -133,6 +133,8 @@ class Scraber extends React.Component {
         <div>
           <div style={{ padding: 10 }}>
             <h1>Load DMI data</h1>
+            <p><i>*You need to modify CORS. <a href="https://www.moesif.com/?int_source=corsextension">I use this exstention</a></i>
+            </p>
             <p>
               The historical <a href="http://dmi.dk/">DMI</a> weather data will
               be displayed in a JSON format
