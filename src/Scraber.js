@@ -1,18 +1,18 @@
 import React from "react";
 
 const months = [
-  "januar",
-  "februar",
-  "marts",
-  "april",
-  "maj",
-  "juni",
-  "juli",
-  "august",
-  "september",
-  "oktober",
-  "november",
-  "december",
+  "Januar",
+  "Februar",
+  "Marts",
+  "April",
+  "Maj",
+  "Juni",
+  "Juli",
+  "August",
+  "September",
+  "Oktober",
+  "November",
+  "December",
 ];
 
 const types = [
@@ -99,7 +99,10 @@ class Scraber extends React.Component {
           }
           var joined = this.state.final.concat(data);
           this.setState({ final: joined });
-          this.getData(date.setDate(date.getDate() + 1));
+          var nextDay = new Date(+date);
+          var dateValue = nextDay.getDate() + 1;
+          nextDay.setDate(dateValue);
+          this.getData(nextDay);
         });
     } else {
       this.setState({
